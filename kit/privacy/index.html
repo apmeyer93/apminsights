@@ -43,7 +43,7 @@ li { font-size: 14px; line-height: 1.8; color: #1A1714; margin-bottom: 4px; }
     <h2>Information we collect</h2>
     <p><strong>Information you provide directly:</strong></p>
     <ul>
-      <li>Name, email address, and baby's name provided when you set up Kit (Kit does not have accounts or passwords)</li>
+      <li>Your first name and baby's name, and optionally an email address, provided when you set up Kit (Kit does not have accounts or passwords). These are stored on your device. Your email address is optional and is never sent to our servers (see below for what is sent to our AI service)</li>
       <li>Budget information including income, fixed expenses, variable expenses, and baby-related expenses</li>
       <li>Spending transactions you log manually</li>
       <li>Savings goal names, target amounts, and contribution amounts</li>
@@ -61,7 +61,8 @@ li { font-size: 14px; line-height: 1.8; color: #1A1714; margin-bottom: 4px; }
   <div class="section">
     <h2>How we store your information</h2>
     <p>All budget, spending, goals, and future fund data is stored locally on your device using on-device storage. This data does not leave your device except as described below.</p>
-    <p>When you use one of Kit's AI features (Kit Advisor, the budget builder insight, Monthly Recap, the weekly check-in, the leave planner review, hidden money priorities, the partner money-date guide, spending trend insights, and cost forecasts), Kit sends the information needed for that request to our secure server infrastructure (hosted on Railway) solely to generate the response. Depending on the feature, this can include your name, your baby's name or age, your monthly income, budget and spending figures, savings goal names and amounts, Future Fund balances, leave-plan figures, and a partner's income if you entered it. Kit Advisor requests also include your email address as an identifier. Kit Advisor conversation content is not retained after a response is generated.</p>
+    <p>When you use one of Kit's AI features (Kit Advisor, the budget builder insight, Monthly Recap, the weekly check-in, the leave planner review, hidden money priorities, the partner money-date guide, spending trend insights, and cost forecasts), Kit sends the information needed for that request to our secure server infrastructure (hosted on Railway) solely to generate the response. Depending on the feature, this can include your name, your baby's name or age, your monthly income, budget and spending figures, savings goal names and amounts, Future Fund balances, leave-plan figures, and a partner's income if you entered it. Each AI request also includes a random identifier generated on your device (used to apply daily usage limits). It is not linked to your name or email address. We do not store the content of your AI requests or responses on our servers once a response has been generated. Anthropic processes these requests under its own terms and data-retention practices, which are described in its privacy policy.</p>
+    <p>Our server keeps technical logs for security, abuse prevention, and troubleshooting. These logs include the time of each request, your IP address, the type and size of the request (such as the number of messages and token usage), and, when a daily usage limit is reached, the random on-device identifier sent with that request. Logs are not intended to include the content of your messages or your budget figures, and are kept for a limited period.</p>
     <p>Bills, reminders, backups, and settings stay on your device. Reminders are scheduled on your device and are not sent to our servers.</p>
   </div>
 
